@@ -682,4 +682,7 @@ footer {
   .btn {
     padding: 15px 40px;
     width: 100%;
-    box-sizing: border-box; } }
+    box-sizing: border-box; }
+  main {
+    background-size: cover;
+    margin: 20px 0; } }
