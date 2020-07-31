@@ -680,4 +680,6 @@ footer {
   .footer__socials {
     margin: 20px 0; }
   .btn {
-    padding: 15px 40px; } }
+    padding: 15px 40px;
+    width: 100%;
+    box-sizing: border-box; } }
