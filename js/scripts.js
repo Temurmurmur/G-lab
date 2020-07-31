@@ -83,7 +83,7 @@ let flag = true;
 burger.onclick = function() {
   flag = !flag;
   if (flag) {
-    burger.style.cssText = 'background: url("../img/ico/burger.svg")center center no-repeat; background-size: cover; z-index: 1';
+    burger.style.cssText = 'background: url("img/ico/burger.svg")center center no-repeat; background-size: cover; z-index: 1';
     anime({
       targets: '.mob-menu__right',
       translateX: 100,
@@ -91,7 +91,7 @@ burger.onclick = function() {
     });
     setTimeout(() => mobMenu.style.cssText = 'display: none', 1000);
   } else {
-    burger.style.cssText = 'background: url("../img/ico/close.svg")center center no-repeat; background-size: cover; z-index: 11';
+    burger.style.cssText = 'background: url("img/ico/close.svg")center center no-repeat; background-size: cover; z-index: 11';
     mobMenu.style.cssText = 'display: block';
     anime({
       targets: '.mob-menu__right',
