@@ -1,0 +1,39 @@
+@media screen and (max-width: 767px) {
+  main {
+    background-position: center;
+  }
+
+  .dev {
+    width: 90%;
+
+    &__title {
+      font-size: 23px;
+    }
+
+    &__text {
+      margin-bottom: 40px;
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 30px 0;
+    justify-content: center;
+
+    &__copy {
+      text-align: center;
+    }
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .footer__socials {
+    margin: 20px 0;
+  }
+
+  .btn {
+    padding: 15px 40px;
+  }
+}

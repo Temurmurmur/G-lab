@@ -1,0 +1,21 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@mixin max-width-page {
+  width: 1200px;
+  margin: 0 auto;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+}
+@mixin reset-a ($color) {
+  text-decoration: none;
+  color: $color;
+}
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
