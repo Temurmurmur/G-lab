@@ -1,3 +1,6 @@
+.mob-btn {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   main {
     background-position: center;
@@ -42,5 +45,16 @@
   main {
     background-size: cover;
     margin: 20px 0;
+  }
+
+  .mob-btn {
+    display: block;
+    position: relative;
+    left: -250px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .bubbly-button {
+    display: none;
   }
 }

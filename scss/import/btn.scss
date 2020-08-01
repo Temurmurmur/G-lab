@@ -20,6 +20,7 @@ body {
   cursor: pointer;
   position: relative;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   &:focus {
     outline: 0;

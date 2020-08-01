@@ -321,7 +321,8 @@ body {
   border: none;
   cursor: pointer;
   position: relative;
-  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s; }
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
   .bubbly-button:focus {
     outline: 0; }
   .bubbly-button:after, .bubbly-button:before {
@@ -570,7 +571,10 @@ footer {
 
 @media screen and (max-width: 1700px) {
   main {
-    background-position: right; }
+    background-position: right;
+    margin: 30px 0;
+    min-height: calc(100vh - 302px);
+    background-size: contain; }
   .dev {
     min-height: 450px; } }
 
@@ -660,6 +664,9 @@ footer {
   main {
     min-height: calc(100vh - 201px); } }
 
+.mob-btn {
+  display: none; }
+
 @media screen and (max-width: 767px) {
   main {
     background-position: center; }
@@ -685,4 +692,11 @@ footer {
     box-sizing: border-box; }
   main {
     background-size: cover;
-    margin: 20px 0; } }
+    margin: 20px 0; }
+  .mob-btn {
+    display: block;
+    position: relative;
+    left: -250px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  .bubbly-button {
+    display: none; } }
