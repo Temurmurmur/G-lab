@@ -1,0 +1,189 @@
+.news-main {
+  background: #fff;
+  @include max-width-page;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin: 30px 0;
+
+  &__item {
+    flex-basis: 30%;
+    background: #ec681c;
+    margin-bottom: 15px;
+    padding: 30px 15px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include border-radius(24px);
+    cursor: pointer;
+
+    h2 {
+      text-align: left;
+      margin: 0 0 20px;
+      color: #fff;
+      text-transform: capitalize;
+    }
+
+    p {
+      text-align: left;
+      margin: 0;
+      color: #fff;
+      line-height: 21px;
+    }
+  }
+}
+
+.c0 {
+  background: linear-gradient(45deg, #06cfef, #FFEB3B);
+}
+
+.c1 {
+  background: linear-gradient(45deg, #1b49b3, #b051b1);
+}
+
+.c2 {
+  background: linear-gradient(45deg, #b051b1, #5ae2ea);
+}
+
+.c3 {
+  background: linear-gradient(45deg, #9c38b5, #fdce00);
+}
+
+.c4 {
+  background: linear-gradient(45deg, #fdce00, #f15555);
+}
+
+.c5 {
+  background: linear-gradient(45deg, #252fa7, #27e25c);
+}
+
+.pages {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 15px;
+  margin-bottom: 60px;
+
+  &__item {
+    width: 30px;
+    height: 30px;
+    background: #ec681c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    @include border-radius(5px);
+    margin-left: 3px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: all 0.5s;
+  }
+}
+
+.active {
+  border: 2px solid #ec681c;
+  color: #ec681c;
+  background: #fff;
+  transition: all 0.5s;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, .5);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  &__content {
+    width: 80%;
+    min-height: 500px;
+    background: #fff;
+    position: relative;
+    @include border-radius(10px);
+    padding: 60px 30px;
+  }
+
+  &__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    background: url("../img/ico/close.svg")center top no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    outline: none;
+  }
+}
+
+.post {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ff9800;
+
+  &__title {
+    text-align: left;
+    font-size: 32px;
+    margin: 0 0 30px;
+    text-transform: capitalize;
+  }
+
+  &__body {
+    text-align: left;
+    margin: 0;
+    line-height: 25px;
+  }
+}
+
+.comments {
+  overflow-y: scroll;
+  height: 500px;
+  padding-right: 15px;
+
+  &__title {
+    text-align: left;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  &__mail {
+    text-align: left;
+    color: #c12020;
+    font-weight: 500;
+    display: inline-block;
+    margin: 20px 0;
+  }
+
+  &__body {
+    text-align: left;
+    margin: 0;
+    line-height: 25px;
+  }
+
+  &__item {
+    background: #bed9be;
+    padding: 30px 15px;
+    margin-bottom: 15px;
+    @include border-radius(5px);
+    text-align: left;
+  }
+}
